@@ -208,13 +208,13 @@ function main() {
     document.addEventListener("click", onMouseClick);
     // Interactive graphics with keyboard
     // 
-    var cameraX = 0.0;
+    var cameraX = 5.0;
     var cameraY = 0.0
     var cameraZ = 0.0;
     var uView = gl.getUniformLocation(shaderProgram, "uView");
     var viewMatrix = glMatrix.mat4.create();
     glMatrix.mat4.lookAt(
-        viewMatrix, [5.0, 3.9, 5.0], // the location of the eye or the camera
+        viewMatrix, [cameraX, 3.9, 5.0], // the location of the eye or the camera
         [0.0, 0.5, 0.1], // the point where the camera look at
         [0.0, 0.5, 0.1]
     );
