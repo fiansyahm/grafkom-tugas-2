@@ -16,10 +16,10 @@ function main() {
         2, 1, 1, 1, 1, 0, 0, 0, 1, // Index:  6
         4, 1, 1, 1, 1, 0, 0, 0, 1, // Index:  7
         // Face C       // Green
-        2, -1, -1, 0, 1, 0, -1, 0, 0, // Index:  8
-        2, 1, -1, 0, 1, 0, -1, 0, 0, // Index:  9
-        2, 1, 1, 0, 1, 0, -1, 0, 0, // Index: 10
-        2, -1, 1, 0, 1, 0, -1, 0, 0, // Index: 11
+        2, -1, -1, 1, 1, 1, 0, 1, 0, // Index:  8
+        2, 1, -1, 1, 1, 1, 0, 1, 0, // Index:  9
+        2, 1, 1, 1, 1, 1, 0, 1, 0, // Index: 10
+        2, -1, 1, 1, 1, 1, 0, 1, 0, // Index: 11
         // Face D       // Blue
         4, -1, -1, 0, 0, 1, 1, 0, 0, // Index: 12
         4, 1, -1, 0, 0, 1, 1, 0, 0, // Index: 13
@@ -37,14 +37,18 @@ function main() {
         4, 1, -1, 1, 1, 1, 0, 1, 0, // Index: 23
 
 
+        // green
         2, 1, -2, 0, 1, 0, -1, 0, 0, // Index:  8//24
         2, 3, 0, 0, 1, 0, 0, -1, 0, // Index:  9//25
         2, 1, 2, 0, 1, 0, -1, 0, 0, // Index: 10//26
 
+        // blue
         4, 1, -2, 0, 0, 1, 1, 0, 0, // Index:  8//27
         4, 3, 0, 0, 0, 1, 1, 0, 0, // Index:  9//28
         4, 1, 2, 0, 0, 1, 1, 0, 0, // Index: 10//29
 
+
+        // yellow
         2, 3, 0, 1, 1, 0, 0, 0, 1, // Index:  9//30
         4, 3, 0, 1, 1, 0, 0, 0, 1, // Index:  9//31
         4, 1, 2, 1, 1, 0, 0, 0, 1, // Index: 10//32
@@ -53,13 +57,62 @@ function main() {
         2, 3, 0, 1, 1, 0, 0, 0, 1, // Index:  9//34
         4, 1, 2, 1, 1, 0, 0, 0, 1, // Index: 10//35
 
+        // red
+        2, 1, -2, 1, 0, 0, 0, 0, -1, // Index:  8//36
+        2, 3, 0, 0, 1, 0, 0, -1, 0, // Index:  9//37
+        4, 3, 0, 0, 0, 1, 1, 0, 0, // Index:  9//38
 
+        4, 3, 0, 0, 0, 1, 1, 0, 0, // Index:  9//39
+        2, 1, -2, 1, 0, 0, 0, 0, -1, // Index:  8//40
+        4, 1, -2, 1, 0, 0, 0, 0, -1, // Index:  8//41
+
+
+        // // kuadran 1
+        // 1.9, 0, 0, 1, 1, 0, 0, 0, 1, // Index:  42
+        // 1.9, 0.7, 0.7, 1, 1, 0, 0, 0, 1, // Index: 43
+        // 1.9, 0, 0.9, 1, 1, 0, 0, 0, 1, // Index: 44
+        // 1.9, 0.9, 0, 1, 1, 0, 0, 0, 1, // Index: 45
+        // // kuadran 2
+        // 1.9, 0, 0, 1, 1, 0, 0, 0, 1, // Index:  46
+        // 1.9, 0.7, -0.7, 1, 1, 0, 0, 0, 1, // Index: 47
+        // 1.9, 0, -0.9, 1, 1, 0, 0, 0, 1, // Index: 48
+
+        // // kuadran 3
+        // 1.9, -0.7, -0.7, 1, 1, 0, 0, 0, 1, // Index: 49
+        // 1.9, -0.9, 0, 1, 1, 0, 0, 0, 1, // Index: 50
+        // 1.9, -0.7, 0.7, 1, 1, 0, 0, 0, 1, // Index: 51
+
+
+
+        // kuadran 1
+        1.9, 0, 0, 1, 1, 0, 0, 0, 1, // Index:  42
+        1.9, 0.7, 0.7, 1, 1, 0, 0, 0, 1, // Index: 43
+        1.9, 0, 0.9, 1, 1, 0, 0, 0, 1, // Index: 44
+
+        1.9, 0, 0, 1, 1, 0, 0, 0, 1, // Index:  45
+        1.9, 0.7, 0.7, 1, 1, 0, 0, 0, 1, // Index: 46
+        1.9, 0.9, 0, 1, 1, 0, 0, 0, 1, // Index: 47
+
+
+        // kuadran 2
+        1.9, 0, 0, 1, 1, 0, 0, 0, 1, // Index:  48
+        1.9, 0.9, 0, 1, 1, 0, 0, 0, 1, // Index: 49
+        1.9, 0.7, -0.7, 1, 1, 0, 0, 0, 1, // Index: 50
+
+        1.9, 0, 0, 1, 1, 0, 0, 0, 1, // Index:  51
+        1.9, 0.7, -0.7, 1, 1, 0, 0, 0, 1, // Index: 52
+        1.9, 0, -0.9, 1, 1, 0, 0, 0, 1, // Index: 53
+
+        // // kuadran 3
+        1.9, 0, 0, 1, 1, 0, 0, 0, 1, // Index:  54
+        1.9, -0.7, -0.7, 1, 1, 0, 0, 0, 1, // Index: 55
+        1.9, -0.9, 0, 1, 1, 0, 0, 0, 1, // Index: 56
 
     ];
 
     var indices = [
         0, 1, 2, 0, 2, 3, // Face A
-        4, 5, 6, 4, 6, 7, // Face B
+        4, 5, 6, 5, 7, 6, // Face B
         8, 9, 10, 8, 10, 11, // Face C
         12, 13, 14, 12, 14, 15, // Face D
         16, 17, 18, 16, 18, 19, // Face E
@@ -69,6 +122,16 @@ function main() {
         27, 28, 29,
         30, 31, 32,
         33, 34, 35,
+        36, 37, 38,
+        39, 40, 41,
+
+        // // kuadran 1
+        42, 43, 44,
+        45, 46, 47,
+        // //kuadran 2 
+        48, 49, 50,
+        51, 52, 53,
+
     ];
 
     // Create a linked-list for storing the vertices data
@@ -208,15 +271,17 @@ function main() {
     document.addEventListener("click", onMouseClick);
     // Interactive graphics with keyboard
     // 
-    var cameraX = 5.0;
-    var cameraY = 0.0
-    var cameraZ = 0.0;
+    var cameraX = 6.0;
+    var cameraY = 2.0
+    var cameraZ = 1.0;
     var uView = gl.getUniformLocation(shaderProgram, "uView");
     var viewMatrix = glMatrix.mat4.create();
+
+
     glMatrix.mat4.lookAt(
-        viewMatrix, [cameraX, 3.9, 5.0], // the location of the eye or the camera
-        [0.0, 0.5, 0.1], // the point where the camera look at
-        [0.0, 0.5, 0.1]
+        viewMatrix, [0.0, 0.0, cameraZ], // the location of the eye or the camera
+        [1.0, 0.0, 0], // the point where the camera look at
+        [0.0, 1.0, 0.0]
     );
     gl.uniformMatrix4fv(uView, false, viewMatrix);
 
@@ -224,12 +289,13 @@ function main() {
         if (event.keyCode == 32) freeze = true;
         if (event.keyCode == 37) cameraX -= 0.1; // Left
         if (event.keyCode == 38) cameraZ -= 0.1; // Up
-        if (event.keyCode == 39) cameraX += 0.1; // Right
+        if (event.keyCode == 39) cameraX += 0.1;
+        // Right
         if (event.keyCode == 40) cameraZ += 0.1; // Down
         glMatrix.mat4.lookAt(
-            viewMatrix, [cameraX, 3.9, -10.0], // the location of the eye or the camera
-            [0.0, 0.5, 0.1], // the point where the camera look at
-            [0.0, 0.5, 0.1]
+            viewMatrix, [0.0, 0.0, cameraZ], // the location of the eye or the camera
+            [1.0, 0.0, 0], // the point where the camera look at
+            [0.0, 1.0, 0.0]
         );
         gl.uniformMatrix4fv(uView, false, viewMatrix);
     }
